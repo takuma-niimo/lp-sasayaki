@@ -1,0 +1,878 @@
+@charset "UTF-8";
+@import url(./common.css);
+/*==================================================================*/
+/* Top style css　*/
+/*==================================================================*/
+/* Page Settings */
+/*------------------------------------*/
+body {
+    overflow-x: hidden;
+}
+
+.block {
+    zoom:1;
+    width: 100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding-bottom:40px;
+}
+
+.block:after {
+    content:".";
+    clear:both;
+    height:0;
+    display:block;
+    visibility:hidden;
+}
+
+.block-title {
+    float:left;
+    width:75px;
+    text-indent:-9999px;
+}
+
+.mainarea:after {
+    content:".";
+    clear:both;
+    height:0;
+    display:block;
+    visibility:hidden;
+}
+
+.mainarea h2 {
+    margin-bottom:35px;
+    font-family:"ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-size:2.2em;
+    line-height:1.6;
+    letter-spacing:0;
+}
+
+.mainarea h2 span {
+    display:block;
+}
+
+.mainarea h2 em {
+    color:#cb1212;
+}
+
+.mainarea .subcatch {
+    margin-bottom:5px;
+    font-size:1.2em;
+    color:#bf7455;
+    font-weight: bold;
+}
+
+/* -------------------------------------------- */
+/* mainvisual */
+/* -------------------------------------------- */
+#mainvisual {
+    width:100%;
+    height: calc(100vw * (645 / 1800));
+    margin:0 auto;
+}
+
+#mainvisual ul {
+    position:relative;
+    width:100%;
+    height: calc(100vw * (645 / 1800));
+    padding:0;
+    margin:0;
+}
+
+#mainvisual li {
+    position:absolute;
+    display:none;
+    top:0;
+    width: 100vw;
+    height: calc(100vw * (645 / 1800));
+}
+
+#mainvisual img {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: auto;
+}
+
+/* -------------------------------------------- */
+/* mainvisual-sp */
+/* -------------------------------------------- */
+#mainvisual-sp {
+    display:none;
+}
+
+/*----------------------------
+写真現在位置
+----------------------------*/
+#photoNav {
+    width: 100%;
+    max-width:1024px;
+    margin: 0 auto;
+    background:url("../img/bg_mainvisual.gif") 50% 0 no-repeat;
+}
+
+#photoNav ul {
+    position:relative;
+    text-align:center;
+    padding-top: 1rem;
+}
+
+#photoNav li {
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    margin:0 4px;
+}
+
+#photoNav li:hover {
+    cursor:pointer;
+}
+
+#photoNav li:hover img {
+    opacity:0.8;
+}
+
+/* -------------------------------------------- */
+/* sasayaki */
+/* -------------------------------------------- */
+#sasayaki {
+    padding-top:40px;
+}
+
+#sasayaki .mainarea {
+    overflow: hidden;
+    padding-left: 2rem;
+}
+
+#sasayaki .mainarea-left {
+    width: 42%;
+    float: left;
+}
+
+#sasayaki .mainarea .photo {
+    width: 55%;
+    max-width: 570px;
+    height: auto;
+    float: right;
+}
+
+#sasayaki .mainarea .photo img {
+    width: 100%;
+}
+
+#sasayaki .mainarea .read {
+    text-indent: 1rem;
+}
+
+/*スノービーチとは*/
+#snowbeech {
+    padding-top:80px;
+    background:transparent url("../img/bg_snowbeech.jpg") 50% 0 no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    margin-bottom: 80px;
+}
+#snowbeech .block-title {
+    /* height:527px; */
+}
+#snowbeech .mainarea {
+    text-align:center;
+}
+#snowbeech .mainarea .photo-wrapper ul li {
+    display:-moz-inline-stack;
+    display:inline-block;
+    vertical-align:middle;
+    *vertical-align:auto;
+    zoom:1;
+    *display:inline;
+    margin:0 10px;
+    letter-spacing:normal;
+}
+
+#snowbeech .mainarea .read {
+    margin-bottom:60px;
+}
+
+/* -------------------------------------------- */
+/* lineup */
+/* -------------------------------------------- */
+#lineup {
+    margin:0 auto 40px;
+    padding-top:80px;
+}
+
+#lineup .block-title {
+    height:586px;
+    background:transparent url("../img/title_lineup.png") 0 0 no-repeat;
+}
+
+#lineup table {
+    background:#FFFFFF;
+    width: auto;
+    margin: 0 auto;
+}
+
+#lineup table th ,#lineup table td {
+    padding:18px 10px;
+    text-align:center;
+}
+
+#lineup table .detail {
+    width: 8em;
+}
+
+#lineup table .dot td {
+}
+
+#lineup table .price {
+    font-weight:bold;
+    font-size:1.1em;
+    color:#ce1f1f;
+}
+
+#lineup table .dot th ,#lineup table .dot td {
+    border-bottom:1px dotted #666666;
+}
+
+#lineup table thead .dot th {
+    border-bottom:3px double #666666;
+}
+
+#lineup table tbody .dot td span {
+    display:block;
+    font-size:0.7em;
+    font-weight:normal;
+    letter-spacing:0;
+    color:#666666;
+}
+
+#lineup table tbody th {
+    background-color:#d1d1d1;
+}
+
+/* -------------------------------------------- */
+/* lineup-sp */
+/* -------------------------------------------- */
+#lineup-sp {
+    display:none;
+}
+
+/* -------------------------------------------- */
+/* lineup_option */
+/* -------------------------------------------- */
+#lineup_option {
+    margin:0 auto 40px;
+    padding-top:80px;
+}
+
+#lineup_option .block-title {
+    height:586px;
+    background:transparent url("../img/title_lineup_option.png") 0 0 no-repeat;
+}
+
+#lineup_option table {
+    background:#FFFFFF;
+    width: auto;
+    margin: 0 auto;
+}
+
+#lineup_option table th ,#lineup_option table td {
+    padding:18px 10px;
+    text-align:center;
+}
+
+#lineup_option table .detail {
+    width: 8em;
+}
+
+#lineup_option table .price {
+    font-weight:bold;
+    font-size:1.1em;
+    color:#ce1f1f;
+}
+
+#lineup_option table .dot th ,#lineup_option table .dot td {
+    border-bottom:1px dotted #666666;
+}
+
+#lineup_option table thead .dot td a img {
+    width: 100%;
+    max-width: 328px;
+}
+
+#lineup_option table thead .dot th {
+    border-bottom:3px double #666666;
+}
+
+#lineup_option table tbody .dot td span {
+    display:block;
+    font-size:0.7em;
+    font-weight:normal;
+    letter-spacing:0;
+    color:#666666;
+}
+
+#lineup_option table tbody th {
+    background-color:#d1d1d1;
+}
+
+/* -------------------------------------------- */
+/* lineup-sp */
+/* -------------------------------------------- */
+#lineup_option-sp {
+    display:none;
+}
+
+#lineup_option-sp .box .photo img {
+    max-width: 328px;
+}
+
+/* -------------------------------------------- */
+/* footer */
+/* -------------------------------------------- */
+#footer {
+    height:94px;
+    background:black url("../img/footer/footer_bg.gif") 0 0 repeat-x;
+}
+
+#footer p {
+    padding-top:35px;
+    font-size:0.9em;
+    text-align:center;
+}
+
+/* -------------------------------------------- */
+/* menu */
+/* -------------------------------------------- */
+#menu {
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:#ffffff;
+    z-index:9999;
+}
+
+#menu .inner {
+    position:relative;
+    width: 100%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+#menu .inner>ul {
+    /* text-align: center; */
+    overflow: hidden;
+}
+
+#menu .inner ul li {
+    display:-moz-inline-stack;
+    /* display:inline-block; */
+    vertical-align:middle;
+    *vertical-align:auto;
+    zoom:1;
+    *display:inline;
+}
+
+#menu .inner ul li a {
+    display:block;
+    color:#000000;
+    font-size:0.9em;
+    text-decoration:none;
+    padding: 20px 0 20px 20px;
+}
+
+#menu .inner ul li.m-lineup a {
+}
+
+#menu .inner ul li a:hover {
+    opacity:0.8;
+}
+
+#menu .inner ul .m-sasayaki a {
+    float: left;
+}
+
+#menu .inner ul .m-snowbeech a {
+    float: left;
+}
+
+#menu .inner ul .m-horebore a {
+    float: right;
+}
+
+#menu .inner ul .m-rakuten a {
+    padding-right: 20px;
+    float: right;
+}
+
+#menu .inner ul .m-lineup a {
+    padding-right: 20px;
+    background-color:#a44237;
+    color: white;
+    float: right;
+}
+
+#menu .inner .logo {
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-62px;
+}
+
+.logo-sp {
+    display:none;
+}
+
+.slicknav_menu {
+    display:none;
+    color:#fff;
+}
+/*ぬるぬるの設定*/
+#page_top {
+    width: 100px;
+    height: 60px;
+    position: fixed;
+    right: .5rem;
+    bottom: .5rem;
+    background: #F3F3F3;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+#page_top a {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 60px;
+    text-decoration: none;
+}
+#page_top a::before {
+    font-family: FontAwesome;
+    content: '\f106';
+    font-size: 25px;
+    color: #434343;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -35px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+#page_top a::after {
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #434343;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+/*===========================================================================*/
+/*  phone  */
+/*===========================================================================*/
+@media screen and (max-width: 767px) {
+/* Page Settings
+------------------------------------------------------------------------ */
+.block {
+    width:95%;
+    margin-bottom:20px;
+}
+
+.block-title {
+    float:none;
+    width:100%;
+    margin-bottom:20px;
+    padding-top:8px;
+    font-size:1.5em;
+    color:#000000;
+    font-family:"ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    text-indent:0;
+    text-align:center;
+}
+
+.mainarea {
+    float:none;
+    width:100%;
+}
+
+.mainarea .subcatch {
+    font-size:0.9em;
+    text-align:center;
+}
+
+.mainarea h2 {
+    margin-bottom:20px;
+    font-size:1.4em;
+    line-height:1.4;
+    text-align:center;
+}
+
+.mainarea h2 span {
+    display:inline;
+}
+
+#topcontrol {
+    display:none;
+}
+
+.logo-sp {
+    position:fixed;
+    display:block;
+    top:7px;
+    left:15px;
+    z-index:9999;
+}
+
+.logo-sp img {
+    width:65px;
+    height:auto;
+}
+
+/* mainvisual
+------------------------------------------------------------------------ */
+#mainvisual {
+    margin-bottom:0;
+    display:none;
+}
+
+#mainvisual ul {
+    height:auto;
+}
+
+#mainvisual ul li {
+    position:static;
+    width:100%;
+    height:auto;
+    margin-left:0;
+}
+
+#mainvisual ul li img {
+    position:static;
+    max-width:100%;
+    width:100%;
+    height:auto;
+}
+
+/* mainvisual-sp
+------------------------------------------------------------------------ */
+#mainvisual-sp {
+    display:block;
+    width:100%;
+}
+
+#mainvisual-sp img {
+    width:100%;
+}
+
+/* slick
+------------------------------------------------------------------------ */
+.js #menu {
+    display:none;
+}
+
+.js .slicknav_menu {
+    display:block;
+    position:fixed;
+    padding:0;
+    top:0;
+    width:100%;
+    z-index:9999;
+}
+
+.js .slicknav_menu .logo {
+    display:none;
+}
+
+.js .slicknav_menu ul {
+    overflow:visible;
+    -webkit-box-shadow:0 7px 15px 0 rgba(255, 255, 255, 0.4);
+    box-shadow:0 7px 15px 0 rgba(255, 255, 255, 0.4);
+}
+
+.slicknav_menu .slicknav_nav {
+    overflow:visible;
+}
+
+/* photonav
+------------------------------------------------------------------------ */
+#photoNav {
+    display:none;
+    position:static;
+    margin-left:0;
+    width:100%;
+}
+
+/* sasayaki
+------------------------------------------------------------------------ */
+#sasayaki {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#sasayaki .block-title {
+    background: transparent;
+    height:auto;
+}
+
+#sasayaki .mainarea {
+    position:static;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+#sasayaki .mainarea-left {
+    width: auto;
+    float: none;
+}
+
+#sasayaki .mainarea h2 {
+    padding-top: 2rem;
+}
+
+#sasayaki .mainarea .photo {
+    position:static;
+    text-align:center;
+    float: none;
+    width: auto;
+}
+
+#sasayaki .mainarea .photo img {
+    /* width:75%; */
+}
+
+#sasayaki .mainarea .read {
+    width:100%;
+}
+
+#technique .mainarea {
+    width:100%;
+    padding:0;
+}
+
+#technique .mainarea .title img {
+    width:100%;
+}
+
+#technique .mainarea h2 {
+    margin-bottom:30px;
+}
+
+#technique .mainarea .read {
+    width:100%;
+    margin-bottom:40px;
+    text-align:left;
+}
+
+#technique .mainarea .photo-area {
+    margin-bottom:20px;
+    text-align:center;
+}
+
+#technique .mainarea .photo-area li {
+    width:95%;
+    margin:0 auto;
+}
+
+#technique .mainarea .photo-area li img {
+    width:80%;
+}
+
+/* lineup
+------------------------------------------------------------------------ */
+#lineup table {
+    display:none;
+}
+
+#lineup .block {
+    margin-bottom:0;
+}
+
+#lineup .block-title {
+    /* background:transparent url("../img/bg_title_line.gif") 50% 0 no-repeat; */
+    background: transparent;
+    height:auto;
+    color:#000000;
+}
+
+/* lineup-sp
+------------------------------------------------------------------------ */
+#lineup-sp {
+    display:block;
+    width:95%;
+    margin:-50px auto 80px;
+}
+
+#lineup-sp .box {
+    margin-bottom:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid #919191;
+    text-align:center;
+}
+
+#lineup-sp .box .photo {
+    margin-bottom:15px;
+}
+
+#lineup-sp .box table {
+    border:1px solid white;
+    border-style:solid none none solid;
+}
+
+#lineup-sp .box table th ,#lineup-sp .box table td {
+    padding:4px 0;
+    border:1px solid white;
+    border-style:none solid solid none;
+    line-height:1.5;
+    letter-spacing:0;
+    text-align:center;
+}
+
+#lineup-sp .box table th span ,#lineup-sp .box table td span {
+    color:#ce1f1f;
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+#lineup-sp .box table th {
+    width:40%;
+    background-color:#d1d1d1;
+}
+
+#lineup-sp .box .btn {
+    display:-moz-inline-stack;
+    display:inline-block;
+    vertical-align:middle;
+    *vertical-align:auto;
+    zoom:1;
+         *display:inline;
+         width:100%;
+         text-align:center;
+     }
+
+     #lineup-sp .box .btn a {
+         display:block;
+         padding:5px 10px;
+         border-radius:3px;
+         background:-webkit-gradient(linear, left top, left bottom, color-stop(0.51, #8c1414), color-stop(0.5, #a02727));
+         background:-webkit-linear-gradient(top, #a02727 50%, #8c1414 51%);
+         background:-moz-linear-gradient(top, #a02727 50%, #8c1414 51%);
+         background:-o-linear-gradient(top, #a02727 50%, #8c1414 51%);
+         background:-ms-linear-gradient(top, #a02727 50%, #8c1414 51%);
+         background:linear-gradient(top, #a02727 50%, #8c1414 51%);
+         color:#fff;
+         font-size:1.2em;
+         letter-spacing:0;
+         text-decoration:none;
+     }
+
+     /* lineup_option
+     ------------------------------------------------------------------------ */
+#lineup_option table {
+    display:none;
+}
+
+#lineup_option .block {
+    margin-bottom:0;
+}
+
+#lineup_option .block-title {
+    /* background:transparent url("../img/bg_title_line.gif") 50% 0 no-repeat; */
+    background: transparent;
+    height:auto;
+    color:#000000;
+}
+
+
+
+/* lineup_option-sp
+------------------------------------------------------------------------ */
+#lineup_option-sp {
+    display:block;
+    width:95%;
+    margin:-50px auto 80px;
+}
+
+#lineup_option-sp .box {
+    margin-bottom:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid #919191;
+    text-align:center;
+}
+
+#lineup_option-sp .box .photo {
+    margin-bottom:15px;
+}
+
+#lineup_option-sp .box table {
+    border:1px solid white;
+    border-style:solid none none solid;
+}
+
+#lineup_option-sp .box table th ,#lineup_option-sp .box table td {
+    padding:4px 0;
+    border:1px solid white;
+    border-style:none solid solid none;
+    line-height:1.5;
+    letter-spacing:0;
+    text-align:center;
+}
+
+#lineup_option-sp .box table th span ,#lineup_option-sp .box table td span {
+    color:#ce1f1f;
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+#lineup_option-sp .box table th {
+    width:40%;
+    background-color:#d1d1d1;
+}
+
+#lineup_option-sp .box .btn {
+    display:-moz-inline-stack;
+    display:inline-block;
+    vertical-align:middle;
+    *vertical-align:auto;
+    zoom:1;
+    *display:inline;
+    width:100%;
+    text-align:center;
+}
+
+#lineup_option-sp .box .btn a {
+    display:block;
+    padding:5px 10px;
+    border-radius:3px;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.51, #8c1414), color-stop(0.5, #a02727));
+    background:-webkit-linear-gradient(top, #a02727 50%, #8c1414 51%);
+    background:-moz-linear-gradient(top, #a02727 50%, #8c1414 51%);
+    background:-o-linear-gradient(top, #a02727 50%, #8c1414 51%);
+    background:-ms-linear-gradient(top, #a02727 50%, #8c1414 51%);
+    background:linear-gradient(top, #a02727 50%, #8c1414 51%);
+    color:#fff;
+    font-size:1.2em;
+    letter-spacing:0;
+    text-decoration:none;
+}
+
+
+
+/* footer
+------------------------------------------------------------------------ */
+#footer {
+    height:auto;
+}
+
+#footer p {
+    padding-bottom:25px;
+}
+}
