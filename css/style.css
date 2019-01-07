@@ -26,6 +26,7 @@ small {
 .background-image {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
     background-image: url(../img/bg-common.jpg);
 }
@@ -168,6 +169,7 @@ nav a, nav a:hover {
 
 #keyvisual.background-image {
     background-image: url(../img/keyvisual-pc.jpg);
+    background-position: top left;
     background-size: 100%;
 }
 
