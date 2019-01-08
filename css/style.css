@@ -23,12 +23,24 @@ small {
     font-size: 80%;
 }
 
+.background-cover {
+    position: fixed;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+}
+
+.background-cover>img {
+    object-fit: cover;
+    width:  100%;
+    height: 100%;
+}
+
 .background-image {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
     background-attachment: fixed;
-    background-image: url(../img/bg-common.jpg);
+    background-position: center center;
 }
 
 .mobileonly {
@@ -169,8 +181,8 @@ nav a, nav a:hover {
 
 #keyvisual.background-image {
     background-image: url(../img/keyvisual-pc.jpg);
-    background-position: top left;
     background-size: 100%;
+    background-position: top;
 }
 
 /* Call to Action --------- */
@@ -240,6 +252,7 @@ nav a, nav a:hover {
 /* Benefit ---------------- */
 #benefit {
     background-color: white;
+    margin-top: -1px;
 }
 
 #benefit ul>li {
@@ -409,6 +422,21 @@ nav a, nav a:hover {
     width: 50%;
 }
 
+#feature ul>li>.visual>*:nth-child(n+2) {
+    margin-top: 4vw;
+}
+
+#feature ul>li>.visual>.slider-nav::after {
+    content: "※参考画像です";
+    display: block;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+#feature ul>li>.visual>.slider-nav {
+    margin-top: 0;
+}
+
 #feature ul>li>.visual>img {
     width: 100%;
 }
@@ -532,8 +560,13 @@ nav a, nav a:hover {
     text-align: right;
 }
 
+#information {
+    background-color: white;
+    margin-top: -1px;
+}
+
 #information>div {
-    width: 70%;
+    width: 80%;
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 10px;
@@ -580,6 +613,9 @@ h3 {
 .section {
     padding-top: 10vw;
     padding-bottom: 10vw;
+}
+
+.background-image {
 }
 
 nav {
@@ -901,7 +937,7 @@ ul#nav-normal>li {
 #feature ul>li>.visual {
     padding-right: 0;
     position: static;
-    width: auto;
+    width: 100%;
 }
 
 #feature ul>li>.visual {
