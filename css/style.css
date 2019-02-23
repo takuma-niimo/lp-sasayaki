@@ -711,8 +711,8 @@ ul#nav-normal>li {
 /* First View ------------- */
 #keyvisual>#firstview-window {
     height: auto;
-    padding-top: 40vw;
-    padding-bottom: 10vw;
+    padding-top: 43vw;
+    padding-bottom: 7vw;
 }
 
 #keyvisual.background-image {
